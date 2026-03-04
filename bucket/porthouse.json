@@ -1,0 +1,23 @@
+{
+  "version": "0.1.1",
+  "description": "Monitor listening ports, detect conflicts, manage port assignments",
+  "homepage": "https://github.com/mohavinash/porthouse",
+  "license": "MIT",
+  "architecture": {
+    "64bit": {
+      "url": "https://github.com/mohavinash/porthouse/releases/download/v0.1.1/porthouse-windows-x86_64.exe",
+      "hash": "9b689c3e90fb4222395aeaf7dcfb8cd958cff9cc48a1faafc53be3eac89cc9bc"
+    }
+  },
+  "bin": [["porthouse-windows-x86_64.exe", "porthouse"]],
+  "checkver": {
+    "github": "https://github.com/mohavinash/porthouse"
+  },
+  "autoupdate": {
+    "architecture": {
+      "64bit": {
+        "url": "https://github.com/mohavinash/porthouse/releases/download/v$version/porthouse-windows-x86_64.exe"
+      }
+    }
+  }
+}
